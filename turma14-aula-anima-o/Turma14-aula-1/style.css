@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 150px;
+    line-height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+     
+     
+}
+
+.pulsando{
+    animation: pulsar ease-in infinite 1s;
+}
+.rodar{
+    animation: rodar linear infinite 1s;
+}
+.piscar{
+    animation: piscar linear infinite 1s;
+}
+@keyframes rodar {
+    0%{
+     transform: rotate(0deg);
+    }
+    100%{
+     transform: rotate(360deg);
+    }
+}
+
+
+
+
+@keyframes pulsar {
+    0%{
+        transform: scale(1,1);
+    }
+
+    33%{
+        transform: scale(1.5,1.5); 
+    }
+
+    66%{
+        transform: scale(1.2,1.2); 
+    }
+
+    100%{
+        transform: scale(1.5,1.5);   
+    }
+}
+
+@keyframes piscar {
+    0%{
+    opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    }
+}
